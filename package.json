@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node .",
-    "nexe": "node fuse.js && nexe dist/app.js -t win32-x64-10.11.0 --no-bundle",
+    "nexe": "node fuse.js && nexe dist/app.js -t win32-x64-10.11.0 --no-bundle genssce.exe",
     "fuse": "node fuse.js"
   },
   "author": "",
