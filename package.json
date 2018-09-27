@@ -4,11 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ."
+    "start": "node .",
+    "nexe": "node fuse.js && nexe dist/app.js -t win32-x64-10.11.0 --no-bundle",
+    "fuse": "node fuse.js"
   },
   "author": "",
   "license": "MIT",
-  "devDependencies": {},
+  "devDependencies": {
+    "fuse-box": "^3.5.0",
+    "typescript": "^3.0.3",
+    "uglify-es": "^3.3.9",
+    "uglify-js": "^3.4.9"
+  },
   "dependencies": {
     "mustache": "^3.0.0",
     "path": "^0.12.7",

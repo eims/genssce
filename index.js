@@ -1,4 +1,7 @@
-#!/usr/bin/env node
+
+const fs = require('fs');
+const mustache = require('mustache');
+const path = require('path');
 const args = require('yargs')
 	.usage('Usage: genssce --input FILEPATH')
 	.option('input', {
@@ -16,9 +19,7 @@ const args = require('yargs')
 		default: false
 	})
 	.argv;
-const fs = require('fs');
-const mustache = require('mustache');
-const path = require('path');
+
 const template = `<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <SpriteStudioCellMap version="1.00.02">
     <name>{{atlasName}}</name>
